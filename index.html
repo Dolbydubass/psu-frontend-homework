@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="form" method="post" action="https://60376bfd5435040017722533.mockapi.io/form">
+        <h2 class="title">Задать вопрос</h2>
+        <input class="input" name="name" type="text" placeholder="Фамилия Имя отчество *" pattern="[А-яЁё\- ]{1,}" required />
+        <input class="input" name="phone" type="tel" placeholder="Телефон *" pattern="[0-9\-\+ ]{1,}" required />
+        <input class="input" name="email" type="email" placeholder="Email" required />
+        <button class="submit_button" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+    </form>
+</body>
+</html>
